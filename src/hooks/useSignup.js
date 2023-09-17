@@ -12,7 +12,7 @@ export const useSignup = () => {
 
         const response = await fetch('/api/user/signup', {
             method: "POST",
-            headers: {'Content-Type': "application/json"},
+            headers: {'Content-Type': "application/json", "Across-Control-Allow-Credentials": "*"},
             body: JSON.stringify({email, password})
         })
 
