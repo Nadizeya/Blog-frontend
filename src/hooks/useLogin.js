@@ -12,7 +12,7 @@ export const useLogin = () => {
 
         const response = await fetch('https://blog-backend-41vc.onrender.com/api/user/login', {
             method: "POST",
-            headers: {'Content-Type': "application/json", "Across-Control-Allow-Credentials": "*"},
+            headers: {'Content-Type': "application/json", "Across-Control-Allow-Origin": "*"},
             body: JSON.stringify({email, password})
         })
 

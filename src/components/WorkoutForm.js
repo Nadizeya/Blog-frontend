@@ -29,7 +29,7 @@ const WorkoutForm = () => {
             headers: {
                 'Content-Type': 'application/json',
                 "Authorization": `Bearer ${user.token}`,
-                "Across-Control-Allow-Credentials": "*"
+                "Across-Control-Allow-Origin": "*"
             }
         })
 

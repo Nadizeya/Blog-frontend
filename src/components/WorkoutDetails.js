@@ -20,7 +20,7 @@ const { user } = useAuthContext()
             method: 'DELETE',
             headers: {
                 "Authorization": `Bearer ${user.token}`,
-                "Across-Control-Allow-Credentials": "*"
+                "Across-Control-Allow-Origin": "*"
             }
             
         })
